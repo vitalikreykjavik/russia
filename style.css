@@ -4,10 +4,14 @@
   box-sizing: border-box;
   font-family: 'Inter', sans-serif;
   color: #FFFFFF;
+  font-size: 10px;
+  font-weight: 400;
 }
 
 body {
   background-color: #2A2C2F;
+  font-size: 10px;
+  font-weight: 400;
 }
 
 .wrapper {
@@ -23,7 +27,7 @@ body {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  
+  align-items: center;
 }
 
 .header__languages {
@@ -35,8 +39,23 @@ body {
 
 .header__language {
   text-decoration: none;
+
+  font-style: normal;
+  font-weight: normal;
+  font-size: 2.4rem;
+  line-height: 23px;
+}
+
+.header__language:hover {
+  border-bottom: 2px solid #ffffff;
+  cursor: pointer;
+}
+
+.header__language:first-child {
+  margin-right: 18px;
 }
 
 .header__language-active {
-  text-decoration: underline;
+  border-bottom: 2px solid #ffffff;
 }
+
